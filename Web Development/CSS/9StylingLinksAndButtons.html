@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links and Buttons</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container {
+            border:2px solid red;
+            background-color: aliceblue;
+            padding:34px;
+            margin:34px;
+            width:666px;
+            margin:40px auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* when we move cursor in it */
+        a:hover {  
+            color:rgb(255, 255, 0);
+            background-color: rgb(0, 153, 255);
+        }
+
+        /* once we visit the link */
+        a:visited {
+            color:darkblue;
+            background-color: rgb(255, 145, 1);
+        }
+
+        /* once we click         */
+        a:active {
+            color:blueviolet;
+            background-color: beige;
+        }
+
+        .btn:hover {
+            color:blueviolet;
+            background-color: azure;
+        }
+
+        .btn {
+            background-color: aqua;
+            padding: 6px;
+            border: 2px solid red;
+            cursor:pointer;
+            font-size:15px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h2>This is Heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quo nesciunt tempore rem nobis ea provident corporis velit, aperiam necessitatibus, corrupti dolorem? Voluptatem, ea sint. Quisquam distinctio quia consequatur, quis perspiciatis ea fuga sint voluptatibus, at ab ratione, obcaecati nihil!</p>
+        <a href="" target="_blank" class="btn">Read More</a>
+        <button class='btn'>Contact Us</button>
+    </div>
+</body>
+</html>

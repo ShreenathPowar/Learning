@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model, Margin and Padding</title>
+
+    <style>
+        /* universal selector */
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px
+        }
+
+        body {
+            background-color: #eefeff;
+        }
+        
+        .container {
+            background-color: aliceblue;
+            border:2px solid darkblue;
+            width:400px;
+            /* padding:10px; */
+             /* we can set top, bottom, left  and right padding and margin like this*/
+            /* padding-top:10px;
+            padding-bottom:20px;
+            padding-left:40px;
+            padding-right:40px; */
+            /* padding: 10px 43px 10px 50px; top right bottom left; */
+            padding:45px 50px; /*top/bottom(y) left/right(x)*/
+            margin:45px 500px; /*top/bottom(y) left/right(x)*/
+            /* we can set top, bottom, left  and right margin like this*/
+            border-radius: 20px;
+            /* box-sizing: border-box; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corrupti quo molestiae excepturi, repellendus reprehenderit quaerat ullam libero inventore eum?</p>
+    </div>
+
+    <div class="container">
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corrupti quo molestiae excepturi, repellendus reprehenderit quaerat ullam libero inventore eum?</p>
+    </div>
+
+    <div class="container">
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corrupti quo molestiae excepturi, repellendus reprehenderit quaerat ullam libero inventore eum?</p>
+    </div>
+</body>
+</html>

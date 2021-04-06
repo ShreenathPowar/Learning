@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        img {
+            width: 50px;
+            display: block;
+            margin: auto;
+        }
+
+        h2 {
+            margin: 0px;
+            text-align: center;
+        }
+
+        .heading {
+            border: 4px solid black;
+            background-color: aliceblue;
+            margin: 5px;
+            padding: 10px 10px;
+            display:inline-block;  /*to give width and have elements in single row take space as given*/
+            /* display:inline; cannot give to block elements */
+            /* diplay: block; will take overall width element will go to next line*/
+            width:30%;
+            /* box-sizing: border-box; */
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png" alt="Failed to load">
+        <h2>Welcome to My Blog</h2>
+    </header>
+    <div class="box">
+        <div class="heading">
+            <h3>Box1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magni reprehenderit qui vitae minima et molestiae nam architecto cum! Earum eius minima ipsam laudantium quos, officia illo amet unde ipsa.</p>
+        </div>
+
+        <div class="heading">
+            <h3>Box2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magni reprehenderit qui vitae minima et molestiae nam architecto cum! Earum eius minima ipsam laudantium quos, officia illo amet unde ipsa.</p>
+        </div>
+
+        <div class="heading">
+            <h3>Box3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magni reprehenderit qui vitae minima et molestiae nam architecto cum! Earum eius minima ipsam laudantium quos, officia illo amet unde ipsa.</p>
+        </div>
+    </div>
+</body>
+</html>
