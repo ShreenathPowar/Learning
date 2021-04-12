@@ -1,0 +1,52 @@
+.container {
+    position: absolute;
+    margin: 70px auto;
+    right:25px;
+    display: block;
+    width:40%;
+    border: 1px solid rgba(0, 0, 0, 0.671);
+    border-radius: 10px;
+    padding:20px;
+    color:white;
+    text-align: center;
+}
+
+.container:hover {
+    background-color: #6d676750;
+}
+
+.container p {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.form-group input {
+    margin:10px auto;
+    padding:6px;
+    display: block;
+    width:330px;
+    border:1px solid black;
+    outline:none;
+    border-radius: 10px;
+}
+
+.radio {
+    color:white;
+    padding: 4px 0px;
+    margin: 5px 0px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.container button {
+    color:azure; 
+    background-color:rgba(182, 194, 194, 0.281); 
+    margin: 0px 0px;
+    padding: 2px 0px; 
+    width:100px;
+}
+
+.container button:hover {
+    background-color:rgba(182, 194, 194, 0.377);
+}
+

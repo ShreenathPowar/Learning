@@ -1,0 +1,9 @@
+/* CSS reset */
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url('/Web Development/sampleWebsiteUsingHtmlAndCSS1/Images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
