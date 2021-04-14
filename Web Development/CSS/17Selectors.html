@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1 {
+            background-color: antiquewhite;
+            color: blueviolet;
+            font-weight: bold;
+            text-align: center;
+        }
+
+
+        div li p {
+            color:blue;
+            background-color:aqua;
+            font-weight: bold;
+        }
+
+        /* direct child */
+        div > p {
+            color:brown;
+            background-color: beige;
+            font-weight: bold;
+        }
+
+        /* previous sibling is div (div and p are siblings of body)*/
+        div + p {
+            color:aquamarine;
+            background-color: azure;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>More on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is pararaph under ul li</p></li>
+                <p>This is a paragraph under li</p>
+            </ul>
+            <p>This is a paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi recusandae eligendi mollitia!</p>
+        </div>
+        <p>This is another paragraph. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, voluptatibus nesciunt eum libero ipsum eveniet?</p>
+    </div>
+    <p>This is outermost paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio officiis itaque repellat accusantium nisi? Ullam, eligendi. Ab rem amet pariatur?</p>
+</body>
+</html>

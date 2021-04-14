@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /* background: url('https://source.unsplash.com/random/1600x900') no-repeat center center/cover; */
+        }
+
+        header::before {
+            background: url("/Web Development/CSS/19Coding.jpg") no-repeat;
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+            background-size: cover;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: left;
+            font-size: 20px;
+        }
+
+        li {
+            padding: 12px;
+            list-style: none;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        section::before {
+            content: "This is before content";
+        }
+
+        section::after {
+            content:"This is after content";
+        }
+
+        .content {
+            text-align:justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About Us</li>
+                <li class="item">Contact Us</li>
+                <li class="item">Log in</li>
+            </ul>
+        </nav>
+        <section>
+            <h2>Welcome to Coding World</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, vel inventore. Praesentium in quibusdam laborum obcaecati natus, aspernatur beatae est distinctio perferendis atque cupiditate nisi possimus doloribus harum magnam blanditiis iusto ad ut deserunt.</p>
+        </section>
+    </header><br><hr>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quisquam vel nemo placeat velit maiores a dolor est aspernatur et distinctio impedit natus consectetur excepturi quibusdam voluptatem, sequi suscipit qui officia in facilis nisi. Repudiandae nostrum, maiores eius pariatur voluptates error corrupti, distinctio maxime veritatis recusandae dolorum exercitationem odit rerum sequi cumque architecto. Incidunt adipisci iste tempora animi veniam! Explicabo, officia ipsa nesciunt perferendis illo optio dolore beatae id illum.</p>
+    </div>
+</body>
+</html>

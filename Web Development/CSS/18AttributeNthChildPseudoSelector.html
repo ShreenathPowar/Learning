@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child Pseudo Selector</title>
+    <style>
+        .container {
+            display: block;
+            width: 20%;
+            margin: auto;
+        }
+
+        input {
+            display: block;
+        }
+
+        input[type="text"] {
+            padding: 12px;
+            border: 1px solid black;
+        }
+
+        a[target] {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        a[target="_self"] {
+            color: aquamarine;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+
+        li:nth-child(3) {
+            color: cyan;
+        }
+
+        li:nth-child(3n + 0) {
+            color: red;
+        }
+
+        li:nth-child(odd) {
+            color: blueviolet;
+        }
+
+        li:nth-child(even) {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2><a href="http://www.google.com" target="_blank">Go to Google</a></h2>
+        <h2><a href="http://www.linkedin.com" target="_self">Go to linkedin</a></h2>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Name">
+            <input type="password" placeholder="password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">Item-1</li>
+            <li class="item" id="item2">Item-2</li>
+            <li class="item" id="item3">Item-3</li>
+            <li class="item" id="item4">Item-4</li>
+            <li class="item" id="item5">Item-5</li>
+            <li class="item" id="item6">Item-6</li>
+            <li class="item" id="item7">Item-7</li>
+            <li class="item" id="item8">Item-8</li>
+            <li class="item" id="item9">Item-9</li>
+        </ul>
+    </div>
+</body>
+
+</html>

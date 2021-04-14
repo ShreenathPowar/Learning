@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .img {
+            display: block;
+            width:50%;
+            margin: 0px auto;
+        }
+
+        .container {
+            /* initalising flexbox */
+            display: flex;
+            width: 100%;
+            height: 600px;
+            border: 2px solid black;
+
+            /* flex properties */
+
+            /* flex-direction: row; default */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+
+            /* flex-wrap: nowrap default; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            
+            /* writing flex-direction and flex-wrap together */
+            /* flex-flow: row-reverse wrap; */
+
+            /* justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around; */
+
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; defualt */
+            /* align-items: stretch; vertically even spaces */
+        }
+
+        .item {
+            width: 140px;
+            height: 190px;
+            background-color: tomato;
+            border: 2px solid black;
+            margin:14px;
+            padding:5px;
+        }
+
+        #item-1 {
+            /* flex properties for flex item */
+            /* order: 3; higher the order, later it shows up in the container */
+            /* flex-grow: 3; takes size of 3 items. negative numbers not allowed*/
+            /* flex-shrink: 3; */
+        }
+
+        #item-2 {
+            /* order: 2; */
+            /* flex-grow: 2; takes size of 2 items */
+            /* flex-shrink: 2; */
+            /* flex-basis: 120px; when flex-direction is row flex-basis will control width  */
+            /* when flex-direction is set to column flex-basis will control height; */
+        }
+
+        #item-3 {
+            /* order: 1;  */
+            /* flex-grow: 2; takes size of 2 items */
+            /* flex: 2 2 200px; (flex-grow flex-shrink flex-basis) */
+            /* align-self: flex-end; */
+            /* align-self: center; */
+        }
+    </style>
+</head>
+<body>
+    <div class="img">
+        <img src="/Web Development/CSS/14Flexbox.png" alt="cannot load flexbox image">
+    </div>
+    <div class="container">
+        <div class="item" id="item-1">Box One</div>
+        <div class="item" id="item-2">Box Two</div>
+        <div class="item" id="item-3">Box Three</div>
+        <!-- <div class="item" id="item-4">Box Four</div>
+        <div class="item" id="item-5">Box Five</div>
+        <div class="item" id="item-6">Box Six</div> -->
+    </div>
+</body>
+</html>

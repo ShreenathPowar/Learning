@@ -1,3 +1,7 @@
+header {
+    position:sticky;
+}
+
 /* left */
 .left {
     position:absolute;
@@ -11,7 +15,6 @@
 
 .left:hover {
     background-color: #5f5a5a2c;
-    
 }
 
 .left img {
