@@ -1,0 +1,49 @@
+#services-container {
+    position: relative;
+}
+
+#services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#services-container::before {
+    content:"";
+    position: absolute;
+    background: url('/Web Development/Project 2 using HTML and CSS/Images/services-bg.jpg') no-repeat center center/cover;
+    height: 100%;
+    width:100%;
+    margin: 22px 0px 0px 0px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#services .box {
+    border: 2px solid brown;
+    height: 300px;
+    margin: 3px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #ffe4c479;
+    
+} 
+
+#services a {
+    text-decoration: none;
+    color:black;
+}
+
+#services .box img{
+    height: 80px;
+    width: 120px;
+    display: block;
+    margin: auto;
+    border-radius: 60px;
+}
+
+.h-secondary {
+    padding: 6px;
+}
+

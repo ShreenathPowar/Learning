@@ -1,0 +1,42 @@
+#contact-section {
+    position: relative;
+}
+
+#contact-section::before {
+    content:"";
+    background: url('/Web Development/Project 2 using HTML and CSS/Images/contactUs.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    margin: 20px 0px;
+}
+
+.input-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-style input, .input-style submit, .input-style textarea {
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    outline:none;
+    background-color: transparent;
+    opacity: 7;
+    box-shadow: 2px 2px 3px black;
+    color:white;
+}
+
+.input-style input::placeholder, .input-style submit::placeholder, .input-style textarea::placeholder {
+    color:white;
+}
+
+.input-style input[type="submit"]:hover {
+    cursor: pointer;
+}
+

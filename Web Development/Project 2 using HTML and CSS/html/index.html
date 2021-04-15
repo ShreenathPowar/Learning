@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Food Delivery</title>
+    <style>
+        /* CSS reset */
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Verdana;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        /* CSS variables */
+        :root {
+            --navbar-height: 59px;
+        }
+    </style>
+    <link rel="stylesheet" href="/Web Development/Project 2 using HTML and CSS/CSS/navbar.css">
+    <link rel="stylesheet" href="/Web Development/Project 2 using HTML and CSS/CSS/home.css">
+    <link rel="stylesheet" href="/Web Development/Project 2 using HTML and CSS/CSS/services-container.css">
+    <link rel="stylesheet" href="/Web Development/Project 2 using HTML and CSS/CSS/contact-section.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/Web Development/Project 2 using HTML and CSS/Images/logo.png" alt="My Online meal">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">Abous Us</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="log">
+            <button class="btn" onclick="">Log in&nbsp;</button>
+            <button class="btn" onclick="">Sign up</button>
+        </div>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to My Food Delivery Website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eos cumque odit? Lorem ipsum dolor, sit amet consectetur adi</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestias rem minus ipsum dicta distinctio rerum quam aliquam modi esse?</p>
+        <button class="btn btn-s">Order Now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <a href="">
+                <div class="box">
+                    <img src="/Web Development/Project 2 using HTML and CSS/Images/1.jpg" alt="">
+                    <h2 class="h-secondary center">Food Catering</h2>
+                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae qui in doloribus laboriosam voluptatibus, sunt, facere.</p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="box">
+                    <img src="/Web Development/Project 2 using HTML and CSS/Images/2.jpg" alt="">
+                    <h2 class="h-secondary center">Food Ordering</h2>
+                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae qui in doloribus laboriosam voluptatibus, sunt, facere.</p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="box">
+                    <img src="/Web Development/Project 2 using HTML and CSS/Images/delivery.jpg" alt="">
+                    <h2 class="h-secondary center">Food Delivery</h2>
+                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae qui in doloribus laboriosam voluptatibus, sunt, facere!</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div class="input">
+            <form action="" class="input-style">
+                <label for="name"></label>
+                <input type="text" placeholder="Name">
+                <label for="email"></label>
+                <input type="email" placeholder="Email">
+                <label for="phone"></label>
+                <input type="phone" id="phone" placeholder="Contact Number">
+                <label for="comment">Comment</label>
+                <textarea rows="10" cols="46" placeholder="type here"></textarea>
+                <input type="submit" name="" value="Submit">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
