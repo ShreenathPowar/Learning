@@ -19,24 +19,36 @@
     align-items: center;
 }
 
-.input-style input, .input-style submit, .input-style textarea {
-    width: 30%;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid black;
+#contact-box input, #contact-box textarea {
+    width: 90%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid  black;
     border-radius: 20px;
-    outline:none;
-    background-color: transparent;
-    opacity: 7;
-    box-shadow: 2px 2px 3px black;
-    color:white;
+    font-size: 1.1rem;
+    outline: none;
 }
 
-.input-style input::placeholder, .input-style submit::placeholder, .input-style textarea::placeholder {
-    color:white;
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
 }
 
-.input-style input[type="submit"]:hover {
-    cursor: pointer;
+#contact-box lable {
+    font-size: 1.3rem;
 }
+
+#contact-box form .form-group:nth-child(5) {
+    position: block;
+    width: 30%;
+    margin:auto;
+}
+
+/* footer */
+footer {
+    text-align: center;
+}
+
 
