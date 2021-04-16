@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-columns: 300px 100px 100px; three columns */
+            /* grid-template-columns: 300px auto 100px; three columns with second auto */
+            /* grid-template-columns: 1fr 4fr 1fr; 6parts of total width. fr -> FRACTION */
+            grid-gap: 2rem;
+            grid-template-columns: repeat(3, auto); /*3 cloumns with equal width*/
+        }
+
+        .item {
+            /* height: 100px; */
+            /* width: 100px; */
+            background-color: beige;
+            border: 1px solid black;
+            margin: 5px;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-9</div>
+    </div>
+</body>
+</html>
