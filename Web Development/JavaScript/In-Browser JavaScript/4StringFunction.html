@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Fucntions in JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>String Fucntions</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias voluptatum quisquam enim, quod harum dolorem repellendus doloremque dolore magnam natus reprehenderit! Modi tempora adipisci asperiores, eligendi temporibus aliquam voluptatem labore ipsam consequatur laboriosam quae.</p>
+    </div>
+
+    <script>
+        var str = "This is a string string";
+        console.log(str);
+
+        var pos = str.indexOf('string'); //first occurence of substring
+        console.log(pos);
+
+        pos = str.lastIndexOf('string'); //last occurence of substring
+        console.log(pos);
+
+        // slice vs substring vs substr
+        var substr = str.slice(1, 6); // slice can take negtive values
+        console.log(substr);
+
+        substr = str.substring(1, 6); // cannot take negative values
+        console.log(substr);
+
+        var substr1 = str.substr(1, 6); // start with 1 and take next 6 characters
+        console.log(substr1);
+ 
+        //replace
+        var replaced = str.replace('string', 'Shreenath');
+        console.log(str);
+        console.log(replaced);
+
+        //Uppercase and LowerCase
+        var strUpper = str.toUpperCase();
+        console.log(strUpper);
+
+        var strLower = str.toLowerCase();
+        console.log(strLower);
+
+        // Concat (can use + instead)
+        var newStr = str.concat('New String');
+        console.log(newStr);
+
+        // trim
+        var strWWhiteSpaces = "    These are white    spaces        ";
+        var strWOWhiteSpaces = str.trim();  //remoce white sapces from front and back
+        console.log(strWWhiteSpaces);
+        console.log(strWOWhiteSpaces);
+
+        // charAt
+        var char2 = str.charAt(2);
+        var charCode = str.charCodeAt(2); // not very imp
+        console.log(char2);
+        console.log(charCode);
+
+        var slice1 = str[2];
+        console.log(slice1);
+    </script>
+</body>
+</html>

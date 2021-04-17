@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array And Objects in JavaScript</title>
+</head>
+<body>
+    <script>
+        let myVar; // -> undefined
+        myvar = 34;
+        let myVar1 = "string";
+        let myVar2 = true;
+        let myvar3 = null;  // typeOf undefined
+        let myVar4 = undefined; //typeOf object
+
+        console.log(!undefined);
+        console.log(!null);
+    
+        // object
+        let employee = {
+            name: "Shreenath",
+            salary: 475000,
+            "my surname": "powar"
+        }
+        //employee.name -> Shreenath
+        //employee['salary'] -> 475000
+        //employee.my surname -> error 
+        //employee['my surname']  -> Powar
+        console.log(employee);
+
+        // Array
+        let names = [1, 2, 4, "Shree", undefined];
+        console.log(names);
+
+        let names1 = new Array(29, 52, 30, "Shree", undefined);
+        console.log(names1);
+        console.log(names1.length);
+        names1 = names1.sort();
+        names1.push("This is pushed");
+        console.log(names1);
+        names1.pop();
+        console.log(names1);
+
+        let names2 = new Array(23); // array of 23 size
+        console.log(names2);
+        
+    </script>
+</body>
+</html>

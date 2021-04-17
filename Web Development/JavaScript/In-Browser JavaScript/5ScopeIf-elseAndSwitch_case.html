@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, if-else and switch-case in JavaScript</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+
+    <script>
+        var string1 = "This is a string 1";
+        var string1 = "This is a string 2"; // will not give error
+        console.log(string1);
+
+        let a = 'a';  // local
+        // let a = 'b'; // will give error
+        {
+            var b = 10; // global
+            let a = 'c' // will not give error (local)
+            console.log(a); // a -> c
+        }
+
+        console.log(a); // a -> a
+        console.log(b); // b -> 10
+
+        const con = "This cannot be changed";
+        console.log(con);
+        // con = "con changed"; // will give error
+
+        // if-else
+        let age = 2;
+        if (age > 14) {
+            console.log('you can drink cold water');
+        }
+
+        else if (age == 2) {
+            console.log('age is 2');
+        }
+
+        else {
+            console.log('you cannot drink cold water');
+        }
+
+        // switch-case
+        const cup = 43;
+        switch (cup) {
+            case 43:
+                console.log('value is 43');
+                break;
+
+            case 46:
+                console.log('value is 43');
+                break;
+
+            case 44:
+                console.log('value is 44');
+                break;
+
+            case 45:
+                console.log('value is 45');
+                break;
+        
+            default:
+                console.log('not 44');
+                break;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using Alert, Prompt and Confirm</title>
+</head>
+<body>
+    <div class="container">
+        This is a page
+    </div>
+
+    <script>
+        // Alert in-browser JavaScript | does not return anything
+        alert('Enter your name and then confirm');
+
+        // prompt -> ask user
+        let name = prompt('What is your name?', 'Guest');
+        
+
+        // confirm 
+        let confirmName = confirm('Confirm?');
+        if (confirmName) {
+            alert('Hii' + ' ' + name);
+        }
+        else {
+            // name = "";
+            alert("Name deleted");
+        }
+    </script>
+</body>
+</html>

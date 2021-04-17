@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings and String methods in JavaScript</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p id="content"></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a perferendis laboriosam illum sunt,
+            modi vero excepturi numquam eius, autem ducimus, nostrum dolorum facilis consequatur labore officia
+            accusamus! Explicabo doloribus dolorum quis id quasi.</p>
+    </div>
+
+    <script>
+        var string = "this";
+        var name = "Shreenath";
+        var surname = new String("Powar");
+        var message = "Hello!"
+        var lang = "JavaScript";
+        console.log(message + " " + name + " " + surname);
+        console.log(string);
+        console.log(typeof(string));
+
+        var temp = `${name} is nice 'person' and learning "${lang}"`; //to use both '' and "" use backticks (``)
+        console.log(temp);
+
+        var tempLen = temp.length;
+        console.log(tempLen);
+
+        console.log("Hello\\World\nShree\tHiii\bb"); //escape sequence characters
+
+        document.getElementById('content').innerHTML = '<h3>This is an h3 heading</h3>';
+    </script>
+</body>
+
+</html>
