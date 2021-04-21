@@ -1,0 +1,63 @@
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* #contact-form {
+    height: 100vh;
+} */
+
+#contact-form::before {
+    content: "";
+    position:absolute;
+    background-color: #ecabab33;
+    height: 110vh;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+}
+
+#contact-form form>input, #contact-form form textarea, #contact-form form .radio {
+    padding: 8px;
+    margin:5px;
+    width: 30%;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid rgb(63, 240, 63);
+}
+
+#contact-form form>input:active, #contact-form form textarea:active, #contact-form form .radio:active {
+    border-bottom: 1.3px solid rgb(16, 43, 16);
+}
+
+.radio {
+    margin-left: 0px;
+}
+
+.radio lable {
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+.radio lable:first-child {
+    padding-left: 0px;
+}
+
+.btn {
+    margin-top: 0.5%;
+    padding: 7px 22px;
+    font-size: 1.3rem;
+    border-radius: 19px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 128, 0, 0.349);
+    transition: background-color 0.5s ease 0s;
+}
+
+.btn:hover {
+    background-color: rgba(0, 128, 0, 0.521);
+}

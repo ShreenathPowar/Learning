@@ -1,0 +1,57 @@
+extends base.pug
+
+block scripts
+    script(src="/static/javascript/index.js")
+    
+block content
+    div#container
+            //- nav#navbar
+            //-     ul
+            //-         div#logo
+            //-             img(src="/static/images/logo1.png" alt="Cannot load")
+            //-         li #[a(href='/') Home]
+            //-         li #[a(href='/') About]
+            //-         li #[a(href='/') Services]
+            //-         li #[a(href='/') Contact us]
+
+            div#home
+                h1.heading 
+                    | Dance Academy
+                h2 
+                    | Indias leading dance Academy!
+                p
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illo doloremque reprehenderit dolore et, quos excepturi ipsa velit atque voluptates eligendi aperiam. Est.
+
+            div#section
+                section#mission-section
+                    p.sub-heading Our Mission
+                    div.card
+                        p.sub-sub-heading Dance Perfection
+                        div.card-box
+                            div.card-img
+                                img(src="/static/images/logo2.png")
+                            div.card-content
+                                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia officia vitae corporis.
+                    div.card
+                        p.sub-sub-heading Dance Perfection
+                        div.card-box
+                            div.card-img
+                                img(src="/static/images/logo3.png")
+                            div.card-content
+                                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia officia vitae corporis.
+                    div.card
+                        p.sub-sub-heading Dance Perfection
+                        div.card-box
+                            div.card-img
+                                img(src="/static/images/logo4.png")
+                            div.card-content
+                                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia officia vitae corporis.
+
+                section#sponsor-section
+                    p.sub-heading Our Sponsors
+                    div#sponsors
+                        img(src="/static/images/sLogo1.png" alt="cannot load")
+                        img(src="/static/images/sLogo2.png" alt="cannot load")
+                        img(src="/static/images/sLogo3.png" alt="cannot load")
+                        img(src="/static/images/sLogo4.jpg" alt="cannot load")
+

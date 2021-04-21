@@ -1,0 +1,21 @@
+The details are: {
+	Name: Shrinath,
+	Email:shrinath.powar@gmail.com,
+	Age:25,
+	Gender:male
+}
+
+The details are: {
+	Name: Shreenath Powar,
+	Email:shrinath.powar@gmail.com,
+	Age:23,
+	Gender:male
+}
+
+The details are: {
+	Name: Shree,
+	Email:sepowar@mitaoe.ac.in,
+	Age:21,
+	Gender:male
+}
+

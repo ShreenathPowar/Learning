@@ -1,0 +1,39 @@
+#navbar {
+    background-color: brown;
+    opacity: 0.7;
+}
+
+#logo {
+    display: flex;
+    color:white;
+    align-items: center;
+    margin:0px 14px;
+}
+
+#logo img {
+    width:40px;
+    height: 40px;
+    filter:invert(1);
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    padding: 30px;
+    color:rgb(255, 214, 152);
+    font-size: 1.5rem;
+}
+
+#navbar li a:hover {
+    color:rgb(255, 232, 198);
+}

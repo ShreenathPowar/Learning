@@ -1,0 +1,25 @@
+
+Contact:Shree {
+	name: Shree,
+	email: shrinath.powar@gmail.com,
+	age: 23,
+	gender: male
+	message: vrdwvwv
+}
+
+Contact:Shreenath Powar {
+	name: Shreenath Powar,
+	email: shrinath.powar@gmail.com,
+	age: 25,
+	gender: male
+	message: rjndvdav
+}
+
+Contact:Shreenath Powar {
+	name: Shreenath Powar,
+	email: shrinath.powar@gmail.com,
+	age: 25,
+	gender: male
+	message: rjndvdav
+}
+
