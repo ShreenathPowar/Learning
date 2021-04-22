@@ -2,7 +2,7 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-const port = 80;
+const port = 8000;
 const hostname = '127.0.0.1';
 
 // EXPRESS
