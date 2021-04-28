@@ -1,0 +1,16 @@
+<div class="container">
+    <h4>Add a todo</h4>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Title</label>
+            <input type="text" [(ngModel)]="title" class="form-control" id="title" name="title" aria-describedby="emailHelp">
+            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <!-- <textarea type="password" class="form-control" id="exampleInputPassword1"> -->
+            <textarea class="form-control" [(ngModel)]="desc" id="description" name="desc" rows="5" placeholder="Type here!"></textarea>
+        </div>
+        <button type="submit" class="btn btn-sm btn-primary m-c">Add To-do</button>
+    </form>
+</div>

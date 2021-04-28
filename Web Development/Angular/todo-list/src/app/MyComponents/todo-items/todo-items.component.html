@@ -1,0 +1,19 @@
+<div class="my-3 mx-30">
+    <h4 [ngClass]="{'strike': !todo.active}">{{ index+1 }} . {{ todo.name }}</h4>
+    <p [ngClass]="{'strike': !todo.active}">{{ todo.desc }}</p>
+
+    <div *ngIf="this.todo.active; else elseBlock">
+        <label class="mx-2" for="checkbox">Mark as done</label>
+        <input type="checkbox" id="checkbox" name="complted" (click)="showHideSubmit(todo)">
+        <span *ngIf="this.todo.checked; else elseBlock">
+            <input class="mx-5 btn btn-sm btn-outline-success" (click)="onSubmit(todo)" type="submit" value="Submit">
+        </span>
+        <ng-template #elseBlock></ng-template>
+    </div>
+
+    <ng-template #elseBlock>
+        <h6>This task is completed</h6>
+    </ng-template>
+
+    <button class="btn btn-sm btn-danger" (click)="onClick(todo)">Delete</button>
+</div>
