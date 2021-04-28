@@ -23,3 +23,11 @@ Contact:Shreenath Powar {
 	message: rjndvdav
 }
 
+Contact:Shreenath Ekanath Powar {
+	name: Shreenath Ekanath Powar,
+	email: shrinath.powar@gmail.com,
+	age: 23,
+	gender: male
+	message: Hi  There
+}
+
